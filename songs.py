@@ -4,8 +4,7 @@ def main():
     data = []
     try:
         while True:
-            line = input().split(separator)
-            data.append((line[0], line[1], line[2]))
+            data.append(input().split(separator))
     except EOFError:
         pass
     data = sorted(data, key = lambda line: line[1])
